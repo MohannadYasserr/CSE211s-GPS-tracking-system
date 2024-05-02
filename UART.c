@@ -2,7 +2,7 @@
 
 // Initialize UART0 and PORTA
 void UART0_init(void){
-	SYSCTL_RCGCUART_R |=0x0001;       //Activate UART1 
+	SYSCTL_RCGCUART_R |=0x0001;       //Activate UART0
 	SYSCTL_RCGCGPIO_R |=0x0001;      //Activate PortB
 	while(GET_BIT(SYSCTL_PRGPIO_R,0)==0 );	
 	;
