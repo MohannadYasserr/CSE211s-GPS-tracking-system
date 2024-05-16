@@ -59,7 +59,7 @@ void GPS_read2() {
        case 1: UART2_interface_singleCharacter(Valid, 1); break; // Read the validity of the GPS data
         case 2: UART2_interface_multipleCharacters(lat, ',');  lat[sizeof(lat) - 1] = '\0'; counter++; flag = 0; break; // Read the latitude
         case 3: UART2_interface_singleCharacter(N_or_S, 1); flag = 1; break; // Read the hemisphere of the latitude
-        case 4: UART2_interface_singleCharacter(longi, 11);longi[sizeof(lat) - 1] = '\0'; counter++; flag = 0; break; // Read the longitude
+        case 4: UART2_interface_multipleCharacter(longi, ',');longi[sizeof(lat) - 1] = '\0'; counter++; flag = 0; break; // Read the longitude
         case 5: UART2_interface_singleCharacter(E_or_W, 1); flag = 1; break; // Read the hemisphere of the longitude
         case 6: UART2_interface_multipleCharacters(speedd, ','); counter++; flag = 0; break; // Read the speed
         
