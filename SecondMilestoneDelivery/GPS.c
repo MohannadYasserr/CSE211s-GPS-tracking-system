@@ -87,7 +87,7 @@ double GPStoDeg(double val) {
 
 // Function to convert degrees to radians
 float degrees_to_radians(float degrees) {
-    return (float) degrees * PI / 180.0f;
+    return (float) degrees * PI / 180.0;
 }
 
 // Function to calculate distance between two GPS coordinates using Haversine formula
