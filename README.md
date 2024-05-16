@@ -5,3 +5,11 @@ The project is implemented using the following hardware:
 1) Tiva-c
 2) NEO6 GPS Module
 3) LCD
+
+
+# Contributions:
+1) Mohannad Yasser and Abdelrahman Farouk: GPS/GPIO
+2) Mohamed Ahmed: UART
+3) Ahmed Akram: SysTick
+4) Philopateer: LCD
+5) Mohamed Wael: main
